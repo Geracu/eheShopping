@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Pedido</title>
+  <link rel="stylesheet" href="pedidos.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Formulario de Pedido</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="product-id">Código de Identificación del Producto</label>
+        <input type="text" id="product-id" name="product-id" disabled>
+      </div>
+
+      <div class="form-group">
+        <label for="product-name">Nombre del Producto</label>
+        <input type="text" id="product-name" name="product-name" disabled>
+      </div>
+
+      <div class="form-group">
+        <label for="product-supplier">Proveedor</label>
+
+        <select id="select-proveedor"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="product-quantity">Cantidad Deseada</label>
+        <input type="number" id="product-quantity" name="product-quantity" required>
+      </div>
+
+      <button type="submit">Confirmar Pedido</button>
+      <button id="back-button" type="button">Regresar</button>
+    </form>
+    <script type="text/javascript" src="pedidos.js"></script>
+  </div>
+</body>
+
+</html>

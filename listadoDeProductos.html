@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="listadoDeProductos.css" />
+  <img src="hwlogo.jpg" alt="EHE Shopping Cart" class="shopping-cart-logo">
+  <title>Product List</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Listado de Productos</h2>
+
+    <table>
+      <thead>
+        <tr class="titulos">
+          <th>Id del Producto</th>
+          <th>Nombre del Producto</th>
+          <th>Proveedor</th>
+          <th>Descripcion</th>
+          <th>Categoria</th>
+          <th>Existencia</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Example Product</td>
+          <td>Example Supplier</td>
+          <td>Description of the product</td>
+          <td>Category Name</td>
+          <td>
+            <span id="valorExistencia">100</span>
+            <input type="number" id="editarExistencia" style="display: none" />
+          </td>
+          <td>
+            <button onclick="editarProducto(1)" class="button-edit">Editar</button>
+            <button onclick="procesarOrden(1)" class="button-order">Procesar Orden</button>
+          </td>
+        </tr>
+      </tbody>
+
+
+    </table>
+    <script type="text/javascript" src="listadoDeProductos.js"></script>
+  </div>
+</body>
+
+</html>

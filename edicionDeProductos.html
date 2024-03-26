@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Product Information</title>
+  <link rel="stylesheet" href="edicionDeProductos.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h2>Editar Informacion de Productos</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="idDelProducto">ID del Producto</label>
+        <input type="text" id="product-id" name="product-id" disabled>
+      </div>
+
+      <div class="form-group">
+        <label for="nombreDelProducto">Nombre del Producto</label>
+        <input type="text" id="product-name" name="product-name">
+      </div>
+
+      <div class="form-group">
+        <label for="proveedor">Proveedor</label>
+        <input type="text" id="product-supplier" name="product-supplier">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <input type="text" id="product-description" name="product-description">
+      </div>
+
+      <div class="form-group">
+        <label for="categoria">Categoría</label>
+        <input type="text" id="product-category" name="product-category">
+      </div>
+
+      <div class="form-group">
+        <label for="existencia">Existencia en Inventario</label>
+        <input type="number" id="product-stock" name="product-stock">
+      </div>
+
+      <button type="button" onclick="eliminarCambios()" class="button-reset">Eliminar Cambios</button>
+      <button type="button" onclick="guardarCambios()" class="button-save">Guardar Cambios</button>
+      <button type="button" onclick="regresar()" class="button-reset">Regresar</button>
+    </form>
+    <script type="text/javascript" src="edicionDeProductos.js"></script>
+  </div>
+</body>
+</html>

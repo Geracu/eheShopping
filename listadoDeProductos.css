@@ -1,0 +1,140 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+}
+.container{
+  width: 95%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 2em;
+  position: relative;
+  background: rgba(0, 0, 0, .15);
+
+  &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+
+      background: linear-gradient(to right,
+              aqua,
+              aqua);
+  }
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    background: linear-gradient(135deg,
+            rgba(63, 198, 213, 0.9),
+            rgba(0, 0, 255, .9));
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    font-size: 1.5em;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #00000026;
+        opacity: .3;
+    }
+}
+
+.edit-form {
+    width: 100%;
+    max-width: 30em;
+    padding: 2em;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(to right,
+                aqua,
+                aqua);
+    }
+}
+
+.edit-form input[disabled] {
+    background-color: #dedede;
+    color: #666;
+}
+
+.edit-form label {
+    display: block;
+    margin: 0.5em 0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.edit-form input,
+.edit-form select {
+    width: calc(100% - 2em);
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.edit-form .button {
+    padding: 1em;
+    width: calc(50% - 1em);
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+.header {
+    align-self: center;
+}
+
+::placeholder {
+    color: gray;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #000000;
+  }
+  .button-edit, .button-order {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .button-edit {
+    background-color: #000000;
+    color: white;
+  }
+  .button-order {
+    background-color: #138146;
+    color: white;
+  }
+  .titulos{
+    color: #ffffff;
+  }
